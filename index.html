@@ -14,8 +14,12 @@
     </header>
     <main>
         <h3>This is not a real form. You can type in some info for testing, but it won't go any far if you hit 'Submit'</h3>
-				<p><em>All fields are required to sign up</em></p>
-        <form action="#" method="post">Sign up form.
+        <form action="#" method="post">
+					<header>
+						<h2>True Trials</h2>
+						<h4>Sign up for cool stuff!</h4>
+						<p><em>All fields are required to sign up</em></p>
+					</header>
 					<section class="form-row">
 						<div class="field">
 							<label for="first-name">First name</label>
@@ -25,7 +29,28 @@
 							<label for="last-name">Last name</label>
 							<input type="text" name="user-last-name" id="firs-name">
 						</div>
+					</section>	
+					<section class="form-row">
+						<div class="field">
+							<label for="email">Email</label>
+							<input type="email" name="user-email" id="email">
+						</div>
+						<div class="field">
+							<label for="phone">Phone</label>
+							<input type="tel" name="user-phone" id="phone">
+						</div>
+					</section>	
+					<section class="form-row">
+						<div class="field">
+							<label for="password-1">Password</label>
+							<input type="password" name="user-password" id="password-1">
+						</div>
+						<div class="field">
+							<label for="password-2">Repeat password</label>
+							<input type="password" name="user-password" id="password-2">
+						</div>
 					</section>
+					<button type="submit">Submit</button>
         </form>
     </main>
 </body>
