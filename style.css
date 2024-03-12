@@ -37,12 +37,14 @@ header {
     flex-direction: row;
     gap: 22px;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.088);
+    background-color: rgba(0, 0, 0, 0.165);
     align-items: center;
     justify-content: center;
     width: 100%;
     position: absolute;
-    top: 74px;
+    top: 56px;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.165), 0 -20px 10px rgba(0, 0, 0, 0.165);
+    
 }
 
 header>div>h1{
