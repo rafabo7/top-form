@@ -3,7 +3,7 @@
     --prim-color: #628293;
     --sec-color: #67706a;
     --third-color: #916c41;
-    --fourth-color: #916c41;
+    --fourth-color: #d2d3d5;
 
 }
 
@@ -30,6 +30,7 @@ header {
     background-repeat: no-repeat;
     width: 40%;
     position: relative;
+    overflow: hidden;
 }
 
 .logo {
@@ -43,17 +44,18 @@ header {
     width: 100%;
     position: absolute;
     top: 56px;
-    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.165), 0 -20px 10px rgba(0, 0, 0, 0.165);
+    box-shadow: 0 20px 4px rgba(0, 0, 0, 0.165), 0 -20px 4px rgba(0, 0, 0, 0.165);
     
 }
 
 header>div>h1{
     text-align: center;
     font-size: 3rem;
+    color: white;
 }
 
-.logo svg {
-    height: 82px; width: 82px;
+.logo img {
+    width: 82px;
 }
 
 .header-footer {
@@ -87,7 +89,9 @@ form {
     align-content: flex-start;
     align-items: flex-start;
     justify-content: space-evenly;
-    gap: 1rem;
+    gap: 1.8rem;
+    margin: 0 auto;
+    width: 90%;
 }
 
 form >.form-header {
@@ -117,17 +121,41 @@ form >.form-header {
 .field input {
     font-size: 1.2rem;
     padding: 4px;
-    border: 1px solid lightgreen;
+    border: 2px solid var(--prim-color);
     border-radius: 4px;
-    width: 90%;
+    width: 80%;
+}
+
+.field input:focus {
+    box-shadow: 2px 2px 1px var(--third-color);
+    outline: none;
 }
 
 form button {
     width: fit-content;
+    font-weight: bold;
     margin-top: 16px;
     font-size: 1.2rem;
     padding: 6px 14px;
-    background-color: lightgreen;
-    border: 1px transparent;
+    background-color: var(--prim-color);
+    color: white;
+    border: 2px solid transparent;
     border-radius: 4px;
+}
+
+form button:hover {
+    border: 2px solid var(--prim-color);
+    background-color: white;
+    color: var(--prim-color);
+    cursor: pointer;
+
+}
+
+.log-in{
+    font-size: 1.2rem
+}
+.log-in a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--prim-color);
 }
