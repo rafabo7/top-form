@@ -82,6 +82,7 @@ h3 {
 }
 
 form {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -89,7 +90,7 @@ form {
     align-content: flex-start;
     align-items: flex-start;
     justify-content: space-evenly;
-    gap: 1.8rem;
+    gap: 38px;
     margin: 0 auto;
     width: 90%;
 }
@@ -129,6 +130,19 @@ form >.form-header {
 .field input:focus {
     box-shadow: 2px 2px 1px var(--third-color);
     outline: none;
+}
+
+.field .error-msg {
+    font-size: 0.6rem;
+    color: red;
+    text-align: left;
+    visibility: hidden;
+}
+
+.field.error .error-msg {
+    font-size: 0.6rem;
+    color: red;
+    text-align: left;
 }
 
 form button {
