@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="./script.js"></script>
+	<script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <title>Sign up!</title>
 </head>
@@ -19,7 +19,7 @@
     </header>
     <main>
         <h3>This is not a real form. You can type in some info for testing, but it won't go any far if you hit 'Submit'</h3>
-        <form action="#" method="post">
+        <form class="form" action="#" method="post">
 					<section class="form-header">
 						<h2>True Trials</h2>
 						<h4>Sign up for cool stuff!</h4>
@@ -28,40 +28,40 @@
 					<section class="form-row">
 						<div class="field">
 							<label for="first-name">First name</label>
-							<input type="text" name="user-first-name" id="first-name">
+							<input class="input" type="text" name="user-first-name" id="first-name">
 							<p class="error-msg">First name is required</p>
 						</div>
 						<div class="field">
 							<label for="last-name">Last name</label>
-							<input type="text" name="user-last-name" id="last-name">
+							<input class="input" type="text" name="user-last-name" id="last-name">
 							<p class="error-msg">Last name is required</p>
 						</div>
 					</section>	
 					<section class="form-row">
 						<div class="field">
 							<label for="email">Email</label>
-							<input type="email" name="user-email" id="email">
+							<input class="input" type="email" name="user-email" id="email">
 							<p class="error-msg">Email is required</p>
 						</div>
 						<div class="field">
 							<label for="phone">Phone</label>
-							<input type="tel" name="user-phone" id="phone">
+							<input class="input" type="tel" name="user-phone" id="phone">
 							<p class="error-msg">Phone number is required</p>
 						</div>
 					</section>	
 					<section class="form-row">
 						<div class="field">
 							<label for="password-1">Password</label>
-							<input type="password" name="user-password" id="password-1">
+							<input class="input" type="password" name="user-password" id="password-1">
 							<p class="error-msg">Passwords don't match</p>
 						</div>
 						<div class="field">
 							<label for="password-2">Repeat password</label>
-							<input type="password" name="user-password" id="password-2">
+							<input class="input" type="password" name="user-password" id="password-2">
 							<p class="error-msg">Passwords don't match</p>
 						</div>
 					</section>
-					<button type="submit">Create account</button>
+					<button class="btn" type="submit">Create account</button>
 					<section class="log-in">
 						<p>Already have an account? <a href="#">Log in</a></p>
 					</section>

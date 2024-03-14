@@ -38,13 +38,13 @@ header {
     flex-direction: row;
     gap: 22px;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.165);
+    background-color: rgba(0, 0, 0, 0.400);
     align-items: center;
     justify-content: center;
     width: 100%;
     position: absolute;
     top: 56px;
-    box-shadow: 0 20px 4px rgba(0, 0, 0, 0.165), 0 -20px 4px rgba(0, 0, 0, 0.165);
+    box-shadow: 0 20px 4px rgba(0, 0, 0, 0.400), 0 -20px 4px rgba(0, 0, 0, 0.400);
     
 }
 
@@ -111,6 +111,10 @@ form >.form-header {
     gap: 1.6rem;
 }
 
+.form-row label {
+    font-size: 1.2rem;
+}
+
 .field {
     display: flex;
     flex-direction: column;
@@ -133,23 +137,26 @@ form >.form-header {
 }
 
 .field .error-msg {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
     color: red;
     text-align: left;
     visibility: hidden;
 }
 
 .field.error .error-msg {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
     color: red;
     text-align: left;
+    visibility: visible;
 }
 
 form button {
     width: fit-content;
     font-weight: bold;
     margin-top: 16px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 6px 14px;
     background-color: var(--prim-color);
     color: white;
